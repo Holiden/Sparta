@@ -1,0 +1,71 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Besom";
+  font-display: swap;
+
+  src: local("Besom"), local("Besom-Regular"), url("../fonts/Besom.woff2") format("woff2"), url("../fonts/Besom.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "CoreSansE-35Light";
+  font-display: swap;
+
+  src: local("CoreSansE-35Light"), url("../fonts/CoreSansE-35Light.woff2") format("woff2"), url("../fonts/CoreSansE-35Light.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "CoreSansE-35LightIt";
+  font-display: swap;
+
+  src: local("CoreSansE-35LightIt"), url("../fonts/CoreSansE-35LightIt.woff2") format("woff2"), url("../fonts/CoreSansE-35LightIt.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "CoreSansE-45Regular";
+  font-display: swap;
+
+  src: local("CoreSansE-45Regular"), url("../fonts/CoreSansE-45Regular.woff2") format("woff2"), url("../fonts/CoreSansE-45Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "CoreSansE-55Medium";
+  font-display: swap;
+
+  src: local("CoreSansE-55Medium"), url("../fonts/CoreSansE-55Medium.woff2") format("woff2"), url("../fonts/CoreSansE-55Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "CoreSansE-65Bold";
+  font-display: swap;
+
+  src: local("CoreSansE-65Bold"), url("../fonts/CoreSansE-65Bold.woff2") format("woff2"), url("../fonts/CoreSansE-65Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "CoreSansE-85Heavy";
+  font-display: swap;
+
+  src: local("CoreSansE-85Heavy"), url("../fonts/CoreSansE-85Heavy.woff2") format("woff2"), url("../fonts/CoreSansE-85Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "CoreSansE-95Black";
+  font-display: swap;
+
+  src: local("CoreSansE-95Black"), url("../fonts/CoreSansE-95Black.woff2") format("woff2"), url("../fonts/CoreSansE-95Black.woff") format("woff");
+}

@@ -1,6 +1,5 @@
 # Sparta
 ![Publication Date](https://img.shields.io/static/v1?label=Release%20Date&message=18.08.2019&color=brightgreen&style=flat-square)
-![Version Status](https://img.shields.io/github/package-json/v/Holiden/Template?label=Version&color=brightgreen&style=flat-square)
 ![License: MIT](https://img.shields.io/github/license/Holiden/Template?label=License&color=brightgreen&style=flat-square)
 ![devDependencies Status](https://img.shields.io/david/dev/Holiden/Template?label=Dependencies&color=brightgreen&style=flat-square)
 
