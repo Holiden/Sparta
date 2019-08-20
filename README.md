@@ -12,6 +12,7 @@
 4. BEM;
 5. VS Code;
 6. Avocode.
+7. Mobile First
 
 ## Контакты
 [telegram](https://t.me/holiden)  
