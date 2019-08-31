@@ -1,0 +1,25 @@
+.roadmap {
+  padding: 0 10px;
+
+  &__title {
+    font: 36px/100px "CoreSansE-95Black", Arial, sans-serif;
+    color: #ff0000;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+
+@include roadmap__title-cover;
+  }
+
+  &__list::before {
+    content: "";
+
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    color: #000000;
+
+@include checkpoint;
+  }
+}

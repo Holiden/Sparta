@@ -1,0 +1,49 @@
+@mixin header__days {
+  height: 40px;
+  width: 205px;
+
+  background: url("./../images/sprites/sprite.png") 0px -14px no-repeat;
+}
+
+@mixin header_blur {
+  height: 14px;
+  width: 351px;
+
+  background: url("./../images/sprites/sprite.png") 0px 0px no-repeat;
+}
+
+@mixin roadmap_1 {
+  height: 237px;
+  width: 290px;
+
+  background: url("./../images/sprites/sprite.png") 0px -157px no-repeat;
+}
+
+@mixin roadmap_2 {
+  height: 243px;
+  width: 291px;
+
+  background: url("./../images/sprites/sprite.png") 0px -635px no-repeat;
+}
+
+@mixin roadmap_3 {
+  height: 333px;
+  width: 320px;
+
+  background: url("./../images/sprites/sprite.png") 0px -878px no-repeat;
+}
+
+@mixin roadmap_4 {
+  height: 241px;
+  width: 294px;
+
+  background: url("./../images/sprites/sprite.png") 0px -394px no-repeat;
+}
+
+@mixin roadmap__title-cover {
+  height: 103px;
+  width: 320px;
+
+  background: url("./../images/sprites/sprite.png") 0px -54px no-repeat;
+}
+

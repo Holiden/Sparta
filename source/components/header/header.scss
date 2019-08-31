@@ -4,7 +4,7 @@
 
   color: #ffffff;
 
-  background: url(../images/header__bg_mobile.jpg) top center no-repeat;
+  background: url(./../images/header__bg_mobile.jpg) top center no-repeat;
 
   &__title {
     max-width: 300px;
@@ -25,8 +25,9 @@
     color: #1b1916;
     letter-spacing: 0.9px;
 
-    background: url(../images/header__days.png) top center no-repeat;
     list-style: none;
+
+@include header__days;
   }
 
   &__item {
