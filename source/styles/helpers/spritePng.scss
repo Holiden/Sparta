@@ -1,3 +1,10 @@
+@mixin advantages_blot {
+  height: 116px;
+  width: 106px;
+
+  background: url("./../images/sprites/sprite.png") 0px -157px no-repeat;
+}
+
 @mixin header__days {
   height: 40px;
   width: 205px;
@@ -16,28 +23,28 @@
   height: 237px;
   width: 290px;
 
-  background: url("./../images/sprites/sprite.png") 0px -157px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -273px no-repeat;
 }
 
 @mixin roadmap_2 {
   height: 243px;
   width: 291px;
 
-  background: url("./../images/sprites/sprite.png") 0px -635px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -751px no-repeat;
 }
 
 @mixin roadmap_3 {
   height: 333px;
   width: 320px;
 
-  background: url("./../images/sprites/sprite.png") 0px -878px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -994px no-repeat;
 }
 
 @mixin roadmap_4 {
   height: 241px;
   width: 294px;
 
-  background: url("./../images/sprites/sprite.png") 0px -394px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -510px no-repeat;
 }
 
 @mixin roadmap__title-cover {
