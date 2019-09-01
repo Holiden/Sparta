@@ -354,10 +354,6 @@ function svgSpriteStack() {
         plugins: [
           {cleanupAttrs: true},
           {cleanupListOfValues: true},
-          {cleanupNumericValues: {
-            floatPrecision: 0
-            }
-          },
           {collapseGroups: true},
           {convertColors: true},
           {convertEllipseToCircle: true},
@@ -380,7 +376,6 @@ function svgSpriteStack() {
           {removeNonInheritableGroupAttrs: true},
           {removeOffCanvasPaths: true},
           {removeScriptElement: true},
-          {removeStyleElement: true},
           {removeTitle: true},
           {removeUnknownsAndDefaults: true},
           {removeUnusedNS: true},

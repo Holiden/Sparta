@@ -9,25 +9,25 @@
   &__title {
     max-width: 300px;
 
-    font: 38px "CoreSansE-95Black", Arial, sans-serif;
+    font: 38px "CoreSansE-95Black";
     letter-spacing: 2.32px;
     text-align: center;
     text-transform: uppercase;
   }
 
   &__list {
+@include header__days;
+
     display: flex;
     min-height: 40px;
     max-width: 205px;
     padding: 0;
 
-    font: 14px "CoreSansE-95Black", Arial, sans-serif;
+    font: 14px "CoreSansE-95Black";
     color: #1b1916;
     letter-spacing: 0.9px;
 
     list-style: none;
-
-@include header__days;
   }
 
   &__item {
@@ -41,14 +41,14 @@
       min-width: 90px;
       margin: 2px 0 20px 0;
 
-      font: italic 14px "CoreSansE-35LightIt", Arial, sans-serif;
+      font: italic 14px "CoreSansE-35LightIt";
       color: #ffffff;
     }
   }
 }
 
 .title_big {
-  font: 102px/11.45px Besom, Arial, sans-serif;
+  font: 102px/11.45px Besom;
   color: #ff0000;
   letter-spacing: 5px;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
@@ -70,7 +70,7 @@
   &__link {
     max-width: 150px;
 
-    font: 18px "CoreSansE-55Medium", Arial, sans-serif;
+    font: 18px "CoreSansE-55Medium";
     color: inherit;
     text-decoration: none;
 
@@ -98,18 +98,18 @@
   min-width: 305px;
   padding: 35px 0 0 ;
 
-  font: 18px "CoreSansE-95Black", Arial, sans-serif;
+  font: 18px "CoreSansE-95Black";
   color: inherit;
   letter-spacing: 0.9px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
-  background: url(../images/button.png) center center no-repeat;
+  background: url(../images/button.png) center no-repeat;
 
   transition: background 0.1s linear;
 
   &:hover {
-    background: url(../images/button_hover.png) center center no-repeat;
+    background: url(../images/button_hover.png) center no-repeat;
   }
 }
