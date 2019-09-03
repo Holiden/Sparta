@@ -1,0 +1,77 @@
+.knowledge {
+  margin: 0 0 45px;
+  padding: 0 10px;
+
+  text-align: center;
+
+  &__title {
+    @include knowledge__title-cover;
+
+    margin: 0 0 70px 0;
+
+    font: 36px "CoreSansE-95Black";
+    color: #ff0000;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 0 35px;
+  }
+
+  &__item_1::before {
+    @include knowledge_01;
+
+    content: "";
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__item_2::before {
+    @include knowledge_02;
+
+    content: "";
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__item_3::before {
+    @include knowledge_03;
+
+    content: "";
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__item_4::before {
+    @include knowledge_04;
+
+    content: "";
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__item_5::before {
+    @include knowledge_05;
+
+    content: "";
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    font: 20px "CoreSansE-65Bold";
+    letter-spacing: 1px;
+  }
+}

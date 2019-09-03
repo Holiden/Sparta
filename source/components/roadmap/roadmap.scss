@@ -78,36 +78,36 @@
     @include roadmap_1;
 
     content: "";
-    position: relative;
 
     display: block;
+    margin: 0 auto;
   }
 
   &__item_2::before {
     @include roadmap_2;
 
     content: "";
-    position: relative;
 
     display: block;
+    margin: 0 auto;
   }
 
   &__item_3::before {
     @include roadmap_3;
 
     content: "";
-    position: relative;
 
     display: block;
+    margin: 0 auto;
   }
 
   &__item_4::before {
     @include roadmap_4;
 
     content: "";
-    position: relative;
 
     display: block;
+    margin: 0 auto;
   }
 
   &__subtitle {
