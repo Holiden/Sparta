@@ -1,0 +1,32 @@
+.security {
+  margin: 0 0 60px;
+  padding: 0 10px;
+
+  &__title {
+    font: 30px "CoreSansE-95Black";
+    color: #ff0000;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding: 0;
+
+    list-style: none;
+
+    &::before {
+      @include security__list;
+
+      content: "";
+
+      display: block;
+      float: left;
+      margin: 0 25px 0 0;
+    }
+  }
+
+  &__item {
+    margin: 0 0 60px;
+  }
+}

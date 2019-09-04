@@ -2,7 +2,7 @@
   height: 116px;
   width: 106px;
 
-  background: url("./../images/sprites/sprite.png") 0px -697px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -681px no-repeat;
 }
 
 @mixin header__days {
@@ -23,35 +23,35 @@
   height: 94px;
   width: 110px;
 
-  background: url("./../images/sprites/sprite.png") 0px -308px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -395px no-repeat;
 }
 
 @mixin knowledge_02 {
   height: 92px;
   width: 118px;
 
-  background: url("./../images/sprites/sprite.png") 0px -124px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -211px no-repeat;
 }
 
 @mixin knowledge_03 {
   height: 92px;
   width: 121px;
 
-  background: url("./../images/sprites/sprite.png") 0px -216px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -303px no-repeat;
 }
 
 @mixin knowledge_04 {
   height: 96px;
   width: 111px;
 
-  background: url("./../images/sprites/sprite.png") 0px -498px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -585px no-repeat;
 }
 
 @mixin knowledge_05 {
   height: 96px;
   width: 115px;
 
-  background: url("./../images/sprites/sprite.png") 0px -402px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -489px no-repeat;
 }
 
 @mixin knowledge__title-cover {
@@ -65,34 +65,41 @@
   height: 237px;
   width: 290px;
 
-  background: url("./../images/sprites/sprite.png") 0px -813px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -797px no-repeat;
 }
 
 @mixin roadmap_2 {
   height: 243px;
   width: 291px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1291px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1275px no-repeat;
 }
 
 @mixin roadmap_3 {
   height: 333px;
   width: 320px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1534px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1518px no-repeat;
 }
 
 @mixin roadmap_4 {
   height: 241px;
   width: 294px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1050px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1034px no-repeat;
 }
 
 @mixin roadmap__title-cover {
-  height: 103px;
-  width: 320px;
+  height: 87px;
+  width: 319px;
 
-  background: url("./../images/sprites/sprite.png") 0px -594px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -124px no-repeat;
+}
+
+@mixin security__list {
+  height: 467px;
+  width: 50px;
+
+  background: url("./../images/sprites/sprite.png") 0px -1851px no-repeat;
 }
 
