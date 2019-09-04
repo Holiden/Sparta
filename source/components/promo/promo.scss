@@ -1,0 +1,44 @@
+.promo {
+  min-height: 360px;
+  padding: 150px 10px 0;
+
+  color: #ffffff;
+
+  background: url(./../images/promo_bg.jpg) top center no-repeat;
+
+  &__title {
+    font: 27px "CoreSansE-95Black";
+    letter-spacing: 1.65px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &_big {
+      font: 80px/15.73px Besom;
+      color: #ff0000;
+      letter-spacing: 5px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+    }
+  }
+}
+
+.button {
+  display: block;
+  min-height: 70px;
+  min-width: 305px;
+  padding: 35px 0 0 ;
+
+  font: 18px "CoreSansE-95Black";
+  color: inherit;
+  letter-spacing: 0.9px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: url(../images/button.png) center no-repeat;
+
+  transition: background 0.1s linear;
+
+  &:hover {
+    background: url(../images/button_hover.png) center no-repeat;
+  }
+}
