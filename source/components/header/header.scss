@@ -4,7 +4,7 @@
 
   color: #ffffff;
 
-  background: url(./../images/header__bg_mobile.jpg) top center no-repeat;
+  background: url(./../images/header_bg.jpg) top center no-repeat;
 
   &__title {
     max-width: 300px;
@@ -13,10 +13,17 @@
     letter-spacing: 2.32px;
     text-align: center;
     text-transform: uppercase;
+
+    &_big {
+      font: 102px/11.45px Besom;
+      color: #ff0000;
+      letter-spacing: 5px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+    }
   }
 
   &__list {
-@include header__days;
+    @include header__days;
 
     display: flex;
     min-height: 40px;
@@ -45,13 +52,6 @@
       color: #ffffff;
     }
   }
-}
-
-.title_big {
-  font: 102px/11.45px Besom;
-  color: #ff0000;
-  letter-spacing: 5px;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
 }
 
 .navigation {
