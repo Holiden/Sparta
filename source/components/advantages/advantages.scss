@@ -21,7 +21,7 @@
       margin: 0 auto 40px;
 
       &::after {
-        @include advantages_blot;
+        @include advantages__blot;
 
         content: "";
         position: absolute;
