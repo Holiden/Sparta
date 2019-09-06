@@ -2,8 +2,6 @@
   padding: 0 10px;
 
   &__title {
-    @include roadmap__title-cover;
-
     position: relative;
 
     margin: 0 0 100px 0;
@@ -13,6 +11,8 @@
     letter-spacing: 1.8px;
     text-align: center;
     text-transform: uppercase;
+
+    background: url(./../images/roadmap__title-cover.png) center 15px no-repeat;
 
     &::before {
       @include checkpoint;

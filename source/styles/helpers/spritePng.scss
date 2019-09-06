@@ -1,20 +1,13 @@
-@mixin advantages_blot {
+@mixin advantages__blot {
   height: 116px;
   width: 106px;
 
-  background: url("./../images/sprites/sprite.png") 0px -681px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -510px no-repeat;
 }
 
 @mixin header__days {
   height: 40px;
   width: 205px;
-
-  background: url("./../images/sprites/sprite.png") 0px -14px no-repeat;
-}
-
-@mixin header_blur {
-  height: 14px;
-  width: 351px;
 
   background: url("./../images/sprites/sprite.png") 0px 0px no-repeat;
 }
@@ -23,83 +16,69 @@
   height: 94px;
   width: 110px;
 
-  background: url("./../images/sprites/sprite.png") 0px -395px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -224px no-repeat;
 }
 
 @mixin knowledge_02 {
   height: 92px;
   width: 118px;
 
-  background: url("./../images/sprites/sprite.png") 0px -211px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -40px no-repeat;
 }
 
 @mixin knowledge_03 {
   height: 92px;
   width: 121px;
 
-  background: url("./../images/sprites/sprite.png") 0px -303px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -132px no-repeat;
 }
 
 @mixin knowledge_04 {
   height: 96px;
   width: 111px;
 
-  background: url("./../images/sprites/sprite.png") 0px -585px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -414px no-repeat;
 }
 
 @mixin knowledge_05 {
   height: 96px;
   width: 115px;
 
-  background: url("./../images/sprites/sprite.png") 0px -489px no-repeat;
-}
-
-@mixin knowledge__title-cover {
-  height: 70px;
-  width: 320px;
-
-  background: url("./../images/sprites/sprite.png") 0px -54px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -318px no-repeat;
 }
 
 @mixin roadmap_1 {
   height: 237px;
   width: 290px;
 
-  background: url("./../images/sprites/sprite.png") 0px -797px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -626px no-repeat;
 }
 
 @mixin roadmap_2 {
   height: 243px;
   width: 291px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1275px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1104px no-repeat;
 }
 
 @mixin roadmap_3 {
   height: 333px;
   width: 320px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1518px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1347px no-repeat;
 }
 
 @mixin roadmap_4 {
   height: 241px;
   width: 294px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1034px no-repeat;
-}
-
-@mixin roadmap__title-cover {
-  height: 87px;
-  width: 319px;
-
-  background: url("./../images/sprites/sprite.png") 0px -124px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -863px no-repeat;
 }
 
 @mixin security__list {
   height: 467px;
   width: 50px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1851px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1680px no-repeat;
 }
 
