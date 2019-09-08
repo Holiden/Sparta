@@ -20,25 +20,3 @@
     }
   }
 }
-
-.button {
-  display: block;
-  min-height: 70px;
-  min-width: 305px;
-  padding: 35px 0 0 ;
-
-  font: 18px "CoreSansE-95Black";
-  color: inherit;
-  letter-spacing: 0.9px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  background: url(../images/button.png) center no-repeat;
-
-  transition: background 0.1s linear;
-
-  &:hover {
-    background: url(../images/button_hover.png) center no-repeat;
-  }
-}
