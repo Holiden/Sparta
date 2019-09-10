@@ -7,19 +7,7 @@
   &__title {
     margin: 0 0 40px 0;
 
-    font: 36px "CoreSansE-95Black";
-    color: #ff0000;
-    letter-spacing: 1.8px;
-    text-align: center;
-    text-transform: uppercase;
-
     background: url(./../images/program__title-cover.png) center 10px no-repeat;
-  }
-
-  &__list {
-    padding: 0;
-
-    list-style: none;
   }
 
   &__item {

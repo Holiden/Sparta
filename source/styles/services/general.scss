@@ -27,3 +27,17 @@ svg {
   clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
 }
+
+.title {
+  font: 36px "CoreSansE-95Black";
+  color: #ff0000;
+  letter-spacing: 1.8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.list {
+  padding: 0;
+
+  list-style: none;
+}
