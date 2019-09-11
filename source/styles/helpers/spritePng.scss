@@ -12,18 +12,11 @@
   background: url("./../images/sprites/sprite.png") 0px 0px no-repeat;
 }
 
-@mixin instructor_decoration_bottom {
-  height: 272px;
-  width: 320px;
+@mixin instructor_decoration {
+  height: 555px;
+  width: 54px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1619px no-repeat;
-}
-
-@mixin instructor_decoration_top {
-  height: 272px;
-  width: 320px;
-
-  background: url("./../images/sprites/sprite.png") 0px -1347px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -2147px no-repeat;
 }
 
 @mixin knowledge_01 {
@@ -79,7 +72,7 @@
   height: 333px;
   width: 320px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1891px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1347px no-repeat;
 }
 
 @mixin roadmap_4 {
@@ -93,6 +86,6 @@
   height: 467px;
   width: 50px;
 
-  background: url("./../images/sprites/sprite.png") 0px -2224px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1680px no-repeat;
 }
 
