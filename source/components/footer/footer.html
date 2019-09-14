@@ -1,20 +1,19 @@
 <footer class="footer">
   <h2 class="title footer__title">Есть вопросы?</h2>
   <p class="footer__text">Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют.</p>
-  <form class="footer__form" action="post">
+  <form action="post">
     <label><span class="visually-hidden">Ваше имя</span>
-      <input class="footer__name" name="name" type="text" placeholder="Имя">
+      <input class="footer__input" name="name" type="text" placeholder="Имя">
     </label>
     <label><span class="visually-hidden">Ваш телефон</span>
-      <input class="footer__phone" name="name" type="number" placeholder="Телефон">
+      <input class="footer__input" name="name" type="tel" placeholder="Телефон">
     </label>
-    <a class="button" href="#">Отправить</a>
+    <a class="button footer__button" href="#">Отправить</a>
   </form>
-  <a href="tel:+79304150252">+7 (930) 415 02 52</a>
-  <a href="#">Политика конфиденциальности</a>
+  <a class="footer__phone" href="tel:+79304150252">+7 (930) 415 02 52</a>
+  <a class="footer__link" href="#">Политика конфиденциальности</a>
   <div class="footer__logo">
-    <img src="./../images/logo_red.png" alt="Красный логотип спецкурса Sparta">
-    <p class="footer__name">Sparta</p>
-    <p class="footer__copyright">&copy; 2017</p>
+    <img src="./../images/logo_red.png" alt="Красный логотип спецкурса Sparta" height="58" width="58">
+    <p class="title footer__name">Sparta <span class="footer__copyright">&copy; 2017</span></p>
   </div>
 </footer>
