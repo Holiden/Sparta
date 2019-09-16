@@ -2,90 +2,97 @@
   height: 116px;
   width: 106px;
 
-  background: url("./../images/sprites/sprite.png") 0px -510px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -529px no-repeat;
 }
 
 @mixin header__days {
   height: 40px;
   width: 205px;
 
-  background: url("./../images/sprites/sprite.png") 0px 0px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -19px no-repeat;
 }
 
 @mixin instructor_decoration {
   height: 555px;
   width: 54px;
 
-  background: url("./../images/sprites/sprite.png") 0px -2147px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -2166px no-repeat;
 }
 
 @mixin knowledge_01 {
   height: 94px;
   width: 110px;
 
-  background: url("./../images/sprites/sprite.png") 0px -224px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -243px no-repeat;
 }
 
 @mixin knowledge_02 {
   height: 92px;
   width: 118px;
 
-  background: url("./../images/sprites/sprite.png") 0px -40px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -59px no-repeat;
 }
 
 @mixin knowledge_03 {
   height: 92px;
   width: 121px;
 
-  background: url("./../images/sprites/sprite.png") 0px -132px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -151px no-repeat;
 }
 
 @mixin knowledge_04 {
   height: 96px;
   width: 111px;
 
-  background: url("./../images/sprites/sprite.png") 0px -318px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -433px no-repeat;
 }
 
 @mixin knowledge_05 {
   height: 96px;
   width: 115px;
 
-  background: url("./../images/sprites/sprite.png") 0px -414px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -337px no-repeat;
+}
+
+@mixin reviews__pagination {
+  height: 19px;
+  width: 253px;
+
+  background: url("./../images/sprites/sprite.png") 0px 0px no-repeat;
 }
 
 @mixin roadmap_1 {
   height: 237px;
   width: 290px;
 
-  background: url("./../images/sprites/sprite.png") 0px -626px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -645px no-repeat;
 }
 
 @mixin roadmap_2 {
   height: 243px;
   width: 291px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1104px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1123px no-repeat;
 }
 
 @mixin roadmap_3 {
   height: 333px;
   width: 320px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1347px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1366px no-repeat;
 }
 
 @mixin roadmap_4 {
   height: 241px;
   width: 294px;
 
-  background: url("./../images/sprites/sprite.png") 0px -863px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -882px no-repeat;
 }
 
 @mixin security__list {
   height: 467px;
   width: 50px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1680px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1699px no-repeat;
 }
 

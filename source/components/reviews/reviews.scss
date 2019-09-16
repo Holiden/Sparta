@@ -1,0 +1,101 @@
+.reviews {
+  margin: 0 0 50px;
+  padding: 0 10px;
+
+  text-align: center;
+
+  &::after {
+    @include reviews__pagination;
+
+    content: "";
+
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &__title {
+    padding: 40px 0 20px;
+
+    background: url(./../images/reviews__title-cover.png) center 30px no-repeat;
+  }
+
+  &__video {
+    position: relative;
+
+    margin: 0 0 60px;
+
+    text-align: center;
+  }
+
+  &__video::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 56px);
+    left: calc(50% - 53.5px);
+
+    height: 112px;
+    width: 107px;
+
+    background: url(./../images/play.png) center no-repeat;
+    cursor: pointer;
+
+    transition: background 0.1s linear;
+  }
+
+  &__video:hover::before {
+    top: calc(50% - 65px);
+    left: calc(50% - 62px);
+
+    height: 130px;
+    width: 124px;
+
+    background: url(./../images/play_hover.png) center no-repeat;
+  }
+
+  &__name {
+    font: 20px "CoreSansE-65Bold";
+  }
+
+  &__button {
+    position: relative;
+
+    margin: 0 0 45px;
+    padding: 0 20px 0 0;
+
+    font: inherit;
+    text-decoration: underline;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      height: 1px;
+      width: 5px;
+
+      background-color: #666666;
+
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      top: 14px;
+      right: 9px;
+
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 14px;
+      right: 6px;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
