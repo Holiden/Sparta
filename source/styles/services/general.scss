@@ -36,6 +36,11 @@ svg {
     max-width: 728px;
     padding: 0 20px;
   }
+
+  @media (min-width: 1920px) {
+    max-width: 1150px;
+    padding: 0 40px;
+  }
 }
 
 .title {

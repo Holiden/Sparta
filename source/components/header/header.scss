@@ -4,10 +4,19 @@
   color: #ffffff;
   text-align: center;
 
-  background: url(./../images/header_bg.jpg) top center / cover no-repeat;
+  background: url(./../images/header_bg.jpg) center / cover no-repeat;
+
+  @media (min-width: 1920px) {
+    min-height: 1000px;
+
+    text-align: left;
+  }
 
   &__title {
+    margin: 30px 0 20px;
+
     font: 38px "CoreSansE-95Black";
+    color: #ffffff;
     letter-spacing: 2.32px;
 
     @media (min-width: 768px) {
@@ -15,11 +24,26 @@
       margin: 0 auto 30px;
     }
 
+    @media (min-width: 1920px) {
+      max-width: 520px;
+      margin: 0 0 40px;
+
+      font-size: 68px;
+      letter-spacing: 3.4px;
+      text-align: left;
+    }
+
     &_big {
       font: 102px/11.45px Besom;
       color: #ff0000;
       letter-spacing: 5px;
       text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+
+      @media (min-width: 1920px) {
+        font-size: 180px;
+        line-height: 20px;
+        letter-spacing: 9px;
+      }
     }
   }
 
@@ -27,13 +51,18 @@
     @include header__days;
 
     display: flex;
+    margin: 0 0 30px;
 
     font: 14px "CoreSansE-95Black";
     color: #1b1916;
     letter-spacing: 0.9px;
 
     @media (min-width: 768px) {
-      margin: 0 210px 45px;
+      margin: 0 210px 30px;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 50px;
     }
   }
 
@@ -50,6 +79,7 @@
 
       font: italic 14px "CoreSansE-35LightIt";
       color: #ffffff;
+      text-align: left;
     }
   }
 }
@@ -62,22 +92,41 @@
   padding: 10px 0 0;
 
   @media (min-width: 768px) {
-    margin: 0 0 70px;
+    margin: 0 0 100px;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 230px;
+    padding: 20px 0 0;
   }
 
   &__logo {
-    display: flex;
     align-items: center;
+    display: flex;
+  }
+
+  &__image {
+    @media (min-width: 1920px) {
+      height: 89px;
+      width: 89px;
+    }
   }
 
   &__name {
     display: none;
+    margin: 0 0 0 10px;
+
     font-size: 20px;
     color: #ffffff;
-    margin: 0 0 0 10px;
-    
+
     @media (min-width: 768px) {
       display: inline;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 0 15px;
+
+      font-size: 28px;
     }
   }
 
@@ -97,11 +146,15 @@
     &:hover {
       color: #ff3838;
     }
+
+    @media (min-width: 1920px) {
+      font-size: 24px;
+    }
   }
 
   &__text {
     min-width: 250px;
-    margin: 50px 0 10px;
+    margin: 50px 0 20px;
 
     letter-spacing: 11.2px;
     text-transform: lowercase;
@@ -109,11 +162,15 @@
     background: url(../images/header__blur.png) center 8px no-repeat;
 
     @media (min-width: 768px) {
-      min-width: 350px;
       order: 2;
+      min-width: 350px;
       margin: 0;
 
       text-align: center;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 18px;
     }
   }
 }
