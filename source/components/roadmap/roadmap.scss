@@ -1,22 +1,20 @@
 .roadmap {
-  padding: 0 10px;
-
   &__title {
     position: relative;
 
-    margin: 0 0 120px 0;
+    margin: 0 0 100px 0;
 
-    line-height: 87px;
+    line-height: 134px;
 
-    background: url(./../images/roadmap__title-cover.png) center 10px no-repeat;
+    background: url(./../images/roadmap__title-cover.png) center no-repeat;
 
     &::before {
       @include checkpoint;
 
       content: "";
       position: absolute;
-      top: 140px;
-      left: 150px;
+      top: 170px;
+      left: calc(50% - 15px);
 
       display: block;
       height: 30px;
@@ -26,8 +24,8 @@
     &::after {
       content: "Start";
       position: absolute;
-      top: 110px;
-      left: 135px;
+      top: 140px;
+      left: calc(50% - 30px);
 
       font: 24px "CoreSansE-35Light";
       color: #ff0000;
@@ -38,7 +36,7 @@
   &__list {
     position: relative;
 
-    margin: 0 0 30px 0;
+    margin: 0 0 130px 0;
 
     text-align: center;
 
@@ -47,8 +45,8 @@
 
       content: "";
       position: absolute;
-      bottom: 30px;
-      left: 135px;
+      bottom: -70px;
+      left: calc(50% - 15px);
 
       display: block;
       height: 30px;
@@ -57,6 +55,10 @@
 
     &::after {
       content: "Finish";
+      position: absolute;
+      bottom: 0;
+      bottom: -100px;
+      left: calc(50% - 30px);
 
       font: 24px "CoreSansE-35Light";
       color: #ff0000;
@@ -73,7 +75,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   &__item_2::before {
@@ -82,7 +84,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   &__item_3::before {
@@ -91,7 +93,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   &__item_4::before {
@@ -100,11 +102,17 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   &__subtitle {
+    margin: 0 0 20px;
+
     font: 20px "CoreSansE-65Bold";
     letter-spacing: 1px;
+  }
+
+  &__text {
+    margin: 0;
   }
 }
