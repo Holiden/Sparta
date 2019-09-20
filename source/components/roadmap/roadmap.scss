@@ -8,6 +8,13 @@
 
     background: url(./../images/roadmap__title-cover.png) center no-repeat;
 
+    @media (min-width: 768px) {
+      margin: 0 0 50px 0;
+
+      font-size: 48px;
+      letter-spacing: 2.4px;
+    }
+
     &::before {
       @include checkpoint;
 
@@ -19,6 +26,10 @@
       display: block;
       height: 30px;
       width: 30px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
 
     &::after {
@@ -30,6 +41,10 @@
       font: 24px "CoreSansE-35Light";
       color: #ff0000;
       text-transform: initial;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -39,6 +54,13 @@
     margin: 0 0 130px 0;
 
     text-align: center;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      padding: 100px 0 110px;
+
+      background: url(./../images/roadmap_bg.png) center top no-repeat;
+    }
 
     &::before {
       @include checkpoint;
@@ -51,6 +73,10 @@
       display: block;
       height: 30px;
       width: 30px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
 
     &::after {
@@ -62,11 +88,21 @@
 
       font: 24px "CoreSansE-35Light";
       color: #ff0000;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
 
   &__item {
     margin: 0 0 50px 0;
+
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      margin: 0;
+    }
   }
 
   &__item_1::before {
@@ -76,15 +112,31 @@
 
     display: block;
     margin: 0 auto 20px;
+
+    @media (min-width: 768px) {
+      flex: 0 0 290px;
+      margin: 0 30px 0 0;
+    }
   }
 
-  &__item_2::before {
-    @include roadmap_2;
+  &__item_2 {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &::before {
+      @include roadmap_2;
 
-    content: "";
+      content: "";
 
-    display: block;
-    margin: 0 auto 20px;
+      display: block;
+      margin: 0 auto 20px;
+
+      @media (min-width: 768px) {
+        flex: 0 0 290px;
+        margin: 0 0 0 30px;
+      }
+    }
   }
 
   &__item_3::before {
@@ -94,15 +146,32 @@
 
     display: block;
     margin: 0 auto 20px;
+
+    @media (min-width: 768px) {
+      flex: 0 0 290px;
+      margin: 0 30px 0 0;
+    }
   }
 
-  &__item_4::before {
-    @include roadmap_4;
+  &__item_4 {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
 
-    content: "";
+    &::before {
+      @include roadmap_4;
 
-    display: block;
-    margin: 0 auto 20px;
+      content: "";
+
+      display: block;
+      margin: 0 auto 20px;
+
+      @media (min-width: 768px) {
+        flex: 0 0 290px;
+        margin: 0 0 0 30px;
+      }
+    }
   }
 
   &__subtitle {
@@ -110,9 +179,19 @@
 
     font: 20px "CoreSansE-65Bold";
     letter-spacing: 1px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__text {
     margin: 0;
+
+    @media (min-width: 768px) {
+      max-width: 300px;
+
+      text-align: left;
+    }
   }
 }

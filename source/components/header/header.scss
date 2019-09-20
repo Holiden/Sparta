@@ -20,8 +20,11 @@
     letter-spacing: 2.32px;
 
     @media (min-width: 768px) {
-      max-width: 300px;
+      max-width: 340px;
       margin: 0 auto 30px;
+
+      font-size: 40px;
+      letter-spacing: 3.34px;
     }
 
     @media (min-width: 1920px) {
@@ -38,6 +41,14 @@
       color: #ff0000;
       letter-spacing: 5px;
       text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+
+      @media (min-width: 768px) {
+        margin: 0 auto 30px;
+
+        font-size: 107px;
+        line-height: 11.97px;
+        letter-spacing: 8.94px;
+      }
 
       @media (min-width: 1920px) {
         font-size: 180px;
