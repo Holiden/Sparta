@@ -70,11 +70,11 @@ svg {
   text-decoration: none;
   text-transform: uppercase;
 
-  background: url(../images/button.png) center no-repeat;
+  background: url(./../images/button.png) center no-repeat;
 
   transition: background 0.1s linear;
 
   &:hover {
-    background: url(../images/button_hover.png) center no-repeat;
+    background: url(./../images/button_hover.png) center no-repeat;
   }
 }
