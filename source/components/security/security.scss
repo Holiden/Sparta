@@ -1,11 +1,35 @@
 .security {
-  margin: 0 0 60px;
-  padding: 0 10px;
+  margin: 0 0 50px;
+
+  @media (min-width: 1920px) {
+    margin: 0 0 100px;
+  }
 
   &__title {
     margin: 0 0 50px;
 
     font-size: 30px;
+
+    @media (min-width: 1920px) {
+      max-width: 750px;
+      margin: 0 auto 70px;
+
+      font-size: 36px;
+    }
+  }
+
+  &__list {
+    @media (min-width: 768px) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1920px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1030px;
+    }
   }
 
   &__list::before {
@@ -15,10 +39,21 @@
 
     display: block;
     float: left;
-    margin: 0 25px 0 0;
+
+    @media (min-width: 1920px) {
+      @include security__list_desktop;
+
+      float: initial;
+    }
   }
 
   &__item {
     margin: 0 0 60px;
+    padding: 0 0 0 60px;
+
+    @media (min-width: 1920px) {
+      flex: 0 0 130px;
+      padding: 20px 0 0;
+    }
   }
 }
