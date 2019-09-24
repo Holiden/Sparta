@@ -1,20 +1,43 @@
 .knowledge {
   margin: 0 0 80px;
 
-  text-align: center;
+  background: url(./../images/knowledge__title-cover.png) center top no-repeat;
+
+  @media (min-width: 768px) {
+    margin: 0 0 30px 0;
+  }
 
   &__title {
     margin: 0 0 50px 0;
 
-    background: url(./../images/knowledge__title-cover.png) center no-repeat;
+    @media (min-width: 768px) {
+      margin: 0 0 70px 0;
+
+      font-size: 48px;
+      line-height: 80px;
+      letter-spacing: 2.4px;
+    }
   }
 
   &__list {
     margin: 0;
+
+    text-align: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {
     margin: 0 0 50px;
+
+    @media (min-width: 768px) {
+      flex: 0 0 300px;
+      margin: 0 30px 50px;
+    }
   }
 
   &__item_1::before {
