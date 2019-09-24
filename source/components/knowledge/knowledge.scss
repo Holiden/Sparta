@@ -1,13 +1,16 @@
 .knowledge {
   margin: 0 0 80px;
-  padding: 0 10px;
 
   text-align: center;
 
   &__title {
     margin: 0 0 50px 0;
 
-    background: url(./../images/knowledge__title-cover.png) center 15px no-repeat;
+    background: url(./../images/knowledge__title-cover.png) center no-repeat;
+  }
+
+  &__list {
+    margin: 0;
   }
 
   &__item {
@@ -20,7 +23,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
   &__item_2::before {
@@ -29,7 +32,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
   &__item_3::before {
@@ -38,7 +41,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
   &__item_4::before {
@@ -47,7 +50,7 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
   &__item_5::before {
@@ -56,11 +59,17 @@
     content: "";
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
   &__subtitle {
+    margin: 0 0 20px;
+
     font: 20px "CoreSansE-65Bold";
     letter-spacing: 1px;
+  }
+
+  &__text {
+    margin: 0;
   }
 }
