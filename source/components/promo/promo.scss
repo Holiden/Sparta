@@ -1,16 +1,38 @@
 .promo {
-  min-height: 360px;
-  padding: 150px 10px 0;
+  min-height: 510px;
+  margin: 0 0 50px;
 
   color: #ffffff;
 
-  background: url(./../images/promo_bg.jpg) top center no-repeat;
+  background: url(./../images/promo_bg.jpg) top center / cover no-repeat;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    min-height: 370px;
+  }
+
+  &__wrapper {
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__title {
+    margin: 0;
+    padding: 200px 0 0;
+
     font: 27px "CoreSansE-95Black";
     letter-spacing: 1.65px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      flex: 0 0 320px;
+      padding: 0;
+    }
 
     &_big {
       font: 80px/15.73px Besom;
