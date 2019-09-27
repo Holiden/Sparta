@@ -4,7 +4,21 @@
   background: url(./../images/skills__title-cover.png) center top 10px no-repeat;
 
   @media (min-width: 768px) {
-    background: url(./../images/skills__title-cover.png) center top no-repeat;
+    background: url(./../images/skills__title-cover.png) center top no-repeat, url(./../images/skills_bg.jpg) left -160px bottom / 584px no-repeat;
+  }
+
+  @media (min-width: 1140px) {
+    background: url(./../images/skills__title-cover.png) center top no-repeat, url(./../images/skills_bg.jpg) left -160px bottom / 684px no-repeat;
+  }
+
+  @media (min-width: 1440px) {
+    background: url(./../images/skills__title-cover.png) center top no-repeat, url(./../images/skills_bg.jpg) left -160px bottom / 784px no-repeat;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 100px;
+
+    background: url(./../images/skills__title-cover_desktop.png) center top no-repeat, url(./../images/skills_bg.jpg) left bottom / 884px no-repeat;
   }
 
   &__title {
@@ -14,6 +28,12 @@
       font-size: 48px;
       line-height: 126px;
       letter-spacing: 2.4px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 68px;
+      line-height: 180px;
+      letter-spacing: 3.4px;
     }
   }
 
@@ -27,7 +47,14 @@
       margin: 0 0 0 -20px;
       padding: 55px 0 0 0;
 
-      background: url(./../images/skills__list_desktop.png) left 120px top no-repeat, url(./../images/skills_bg.png) left -160px bottom / 440px no-repeat;
+      background: url(./../images/skills__list_desktop.png) left 120px top no-repeat;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 0 -20px;
+      padding: 55px 0 0 0;
+
+      background: url(./../images/skills__list_desktop.png) left 500px top no-repeat;
     }
   }
 
@@ -37,6 +64,10 @@
     @media (min-width: 768px) {
       margin: 0 0 100px 240px;
     }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 100px 630px;
+    }
   }
 
   &__item:nth-of-type(2) {
@@ -44,6 +75,10 @@
 
     @media (min-width: 768px) {
       margin: 0 0 95px 350px;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 95px 740px;
     }
   }
 
@@ -53,6 +88,10 @@
     @media (min-width: 768px) {
       margin: 0 0 120px 420px;
     }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 115px 810px;
+    }
   }
 
   &__item:nth-of-type(4) {
@@ -61,6 +100,10 @@
     @media (min-width: 768px) {
       margin: 0 0 90px 470px;
     }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 100px 860px;
+    }
   }
 
   &__item:nth-of-type(5) {
@@ -68,6 +111,10 @@
 
     @media (min-width: 768px) {
       margin: 0 0 0 485px;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 100px 870px;
     }
   }
 }
