@@ -3,34 +3,71 @@
 
   background: url(./../images/skills__title-cover.png) center top 10px no-repeat;
 
+  @media (min-width: 768px) {
+    background: url(./../images/skills__title-cover.png) center top no-repeat;
+  }
+
   &__title {
     margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 126px;
+      letter-spacing: 2.4px;
+    }
   }
 
   &__list {
-    margin: 0;
+    margin: 0 0 0 -10px;
     padding: 100px 0 0 0;
 
     background: url(./../images/skills__list.png) left -60px top no-repeat;
+
+    @media (min-width: 768px) {
+      margin: 0 0 0 -20px;
+      padding: 55px 0 0 0;
+
+      background: url(./../images/skills__list_desktop.png) left 120px top no-repeat, url(./../images/skills_bg.png) left -160px bottom / 440px no-repeat;
+    }
   }
 
   &__item:nth-of-type(1) {
     margin: 0 0 75px 100px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 100px 240px;
+    }
   }
 
   &__item:nth-of-type(2) {
     margin: 0 0 65px 130px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 95px 350px;
+    }
   }
 
   &__item:nth-of-type(3) {
     margin: 0 0 90px 140px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 120px 420px;
+    }
   }
 
   &__item:nth-of-type(4) {
     margin: 0 0 65px 120px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 90px 470px;
+    }
   }
 
   &__item:nth-of-type(5) {
     margin: 0 0 0 75px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 0 485px;
+    }
   }
 }
