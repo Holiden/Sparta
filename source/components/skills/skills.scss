@@ -1,32 +1,36 @@
 .skills {
-  min-height: 900px;
-  padding: 0 10px;
+  margin: 0 0 50px;
 
-  background: url(./../images/skills_bg.png) left 100px no-repeat;
+  background: url(./../images/skills__title-cover.png) center top 10px no-repeat;
 
   &__title {
-    margin: 50px 0 65px 0;
+    margin: 0;
+  }
 
-    background: url(./../images/skills__title-cover.png) center 35px no-repeat;
+  &__list {
+    margin: 0;
+    padding: 100px 0 0 0;
+
+    background: url(./../images/skills__list.png) left -60px top no-repeat;
   }
 
   &__item:nth-of-type(1) {
-    margin: 0 0 75px 70px;
-  }
-
-  &__item:nth-of-type(2) {
     margin: 0 0 75px 100px;
   }
 
+  &__item:nth-of-type(2) {
+    margin: 0 0 65px 130px;
+  }
+
   &__item:nth-of-type(3) {
-    margin: 0 0 105px 110px;
+    margin: 0 0 90px 140px;
   }
 
   &__item:nth-of-type(4) {
-    margin: 0 0 60px 90px;
+    margin: 0 0 65px 120px;
   }
 
   &__item:nth-of-type(5) {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 75px;
   }
 }
