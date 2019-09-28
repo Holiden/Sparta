@@ -1,27 +1,30 @@
 .program {
-  min-height: 900px;
-  padding: 40px 10px 0;
+  min-height: 1340px;
+  margin: 0 0 50px 0;
 
-  background: url(./../images/program_bg.jpg) no-repeat;
+  background: url(./../images/program__title-cover.png) center top 45px no-repeat, url(./../images/program_photo.jpg) left -20px bottom / auto 320px no-repeat, url(./../images/program_bg.jpg) center / cover no-repeat;
 
   &__title {
-    margin: 0 0 40px 0;
+    margin: 0 0 50px 0;
+    padding: 40px 0 0;
+  }
 
-    background: url(./../images/program__title-cover.png) center 10px no-repeat;
+  &__list {
+    margin: 0 0 50px;
   }
 
   &__item {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
   }
 
   &__number {
-    padding: 0 15px;
+    padding: 0 20px 0 0;
 
-    font: 30px/16.32px Besom;
+    font: 30px Besom;
     color: #ff0000;
-    letter-spacing: 2.21px;
+    letter-spacing: 2px;
   }
 
   &__text {
@@ -29,12 +32,16 @@
   }
 
   &__subtitle {
-    margin: 60px 0 40px;
+    margin: 0 0 50px;
 
-    font: 54px/15.73px Besom;
+    font: 54px Besom;
     color: #ff0000;
-    letter-spacing: 3.43px;
+    letter-spacing: 3.5px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__button {
+    margin: 0 0 60px;
   }
 }
