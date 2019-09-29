@@ -8,6 +8,10 @@
     background: url(./../images/footer_bg.jpg) center top -10px/ auto 700px no-repeat;
   }
 
+  @media (min-width: 1920px) {
+    background: url(./../images/footer_bg.jpg) center top -15px no-repeat;
+  }
+
   &__title {
     margin: 0 0 20px;
     padding: 90px 0 0;
@@ -23,6 +27,10 @@
 
       font-size: 65px;
       letter-spacing: 3.2px;
+    }
+
+    @media (min-width: 1920px) {
+      padding: 180px 0 0;
     }
   }
 
@@ -69,6 +77,10 @@
 
     @media (min-width: 768px) {
       margin: 20px 0 160px;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 20px 0 210px;
     }
   }
 
@@ -120,7 +132,7 @@
     }
   }
 
-  &__logo {
+  &__logo-wrapper {
     align-items: center;
     display: flex;
     max-width: 150px;
