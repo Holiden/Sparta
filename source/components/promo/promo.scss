@@ -12,6 +12,10 @@
     min-height: 370px;
   }
 
+  @media (min-width: 1920px) {
+    margin: 0 0 90px;
+  }
+
   &__wrapper {
     @media (min-width: 768px) {
       align-items: center;
@@ -25,7 +29,7 @@
     padding: 200px 0 0;
 
     font: 27px "CoreSansE-95Black";
-    letter-spacing: 1.65px;
+    letter-spacing: 1.6px;
     text-align: center;
     text-transform: uppercase;
 
@@ -34,11 +38,26 @@
       padding: 0;
     }
 
+    @media (min-width: 1920px) {
+      display: flex;
+
+      font-size: 41px;
+      letter-spacing: 2.4px;
+      text-align: left;
+    }
+
     &_big {
-      font: 80px/15.73px Besom;
+      font: 80px Besom;
       color: #ff0000;
       letter-spacing: 5px;
-      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+      @media (min-width: 1920px) {
+        margin: 0 40px 0 0;
+
+        font-size: 121px;
+        letter-spacing: 7px;
+      }
     }
   }
 }
