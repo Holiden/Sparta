@@ -1,9 +1,15 @@
 .reviews {
-  min-height: 970px;
+  min-height: 940px;
 
   text-align: center;
 
   background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom -40px / auto 710px no-repeat;
+
+  @media (min-width: 768px) {
+    min-height: 1020px;
+
+    background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom / auto 490px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
+  }
 
   &::after {
     @include reviews__pagination;
@@ -15,46 +21,76 @@
   }
 
   &__title {
-    margin: 0 0 60px;
+    margin: 0 0 40px;
 
     line-height: 80px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      letter-spacing: 2.4px;
+    }
+  }
+
+  &__video-wrapper {
+    position: relative;
+
+    margin: 0 0 80px;
+
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 56px);
+      left: calc(50% - 53.5px);
+
+      height: 112px;
+      width: 107px;
+
+      background: url(./../images/play.png) center no-repeat;
+      cursor: pointer;
+
+      transition: background 0.1s linear;
+    }
+
+    &:hover::before {
+      top: calc(50% - 65px);
+      left: calc(50% - 62px);
+
+      height: 130px;
+      width: 124px;
+
+      background: url(./../images/play_hover.png) center no-repeat;
+    }
   }
 
   &__video {
-    position: relative;
-
-    margin: 0 0 100px;
-
-    text-align: center;
+    @media (min-width: 768px) {
+      height: 407px;
+      width: 723px;
+    }
   }
 
-  &__video::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 56px);
-    left: calc(50% - 53.5px);
-
-    height: 112px;
-    width: 107px;
-
-    background: url(./../images/play.png) center no-repeat;
-    cursor: pointer;
-
-    transition: background 0.1s linear;
+  &__wrapper_middle {
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 
-  &__video:hover::before {
-    top: calc(50% - 65px);
-    left: calc(50% - 62px);
-
-    height: 130px;
-    width: 124px;
-
-    background: url(./../images/play_hover.png) center no-repeat;
+  &__wrapper_bottom {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__photo {
     margin: 0 0 20px;
+
+    @media (min-width: 768px) {
+      height: 193px;
+      width: 145px;
+      margin: 0 20px 0 0;
+    }
   }
 
   &__name {
@@ -77,7 +113,7 @@
 
       display: block;
       height: 50px;
-      width: 320px;
+      width: 100%;
 
       background-image: linear-gradient(to top, #ffffff 0%, transparent 100%);
     }
@@ -95,6 +131,16 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: #ff3838;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 0 60px;
+    }
 
     &::before,
     &::after {
