@@ -16,21 +16,14 @@
   height: 555px;
   width: 54px;
 
-  background: url("./../images/sprites/sprite.png") 0px -2648px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -2674px no-repeat;
 }
 
-@mixin instructor_decoration_1 {
-  height: 240px;
-  width: 53px;
+@mixin instructor_decoration_desktop {
+  height: 506px;
+  width: 54px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1409px no-repeat;
-}
-
-@mixin instructor_decoration_2 {
-  height: 240px;
-  width: 53px;
-
-  background: url("./../images/sprites/sprite.png") 0px -1169px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -2168px no-repeat;
 }
 
 @mixin knowledge_01 {
@@ -58,14 +51,14 @@
   height: 96px;
   width: 111px;
 
-  background: url("./../images/sprites/sprite.png") 0px -387px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -483px no-repeat;
 }
 
 @mixin knowledge_05 {
   height: 96px;
   width: 115px;
 
-  background: url("./../images/sprites/sprite.png") 0px -483px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -387px no-repeat;
 }
 
 @mixin reviews__pagination {
@@ -86,14 +79,14 @@
   height: 242px;
   width: 290px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1649px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1169px no-repeat;
 }
 
 @mixin roadmap_3 {
   height: 302px;
   width: 290px;
 
-  background: url("./../images/sprites/sprite.png") 0px -1891px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1411px no-repeat;
 }
 
 @mixin roadmap_4 {
@@ -107,7 +100,7 @@
   height: 455px;
   width: 50px;
 
-  background: url("./../images/sprites/sprite.png") 0px -2193px no-repeat;
+  background: url("./../images/sprites/sprite.png") 0px -1713px no-repeat;
 }
 
 @mixin security__list_desktop {

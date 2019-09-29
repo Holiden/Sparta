@@ -7,10 +7,21 @@
     margin: 0 0 60px;
 
     line-height: 70px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 80px;
+      letter-spacing: 2.4px;
+    }
   }
 
   &__photo {
-    margin: 0 0 10px;
+    display: block;
+    margin: 0 auto 10px;
+
+    @media (min-width: 768px) {
+      margin: 0 auto 20px;
+    }
   }
 
   &__name {
@@ -20,10 +31,18 @@
     color: #ff0000;
     letter-spacing: 1.2px;
     text-align: center;
+
+    @media (min-width: 768px) {
+      margin: 0 0 60px;
+    }
   }
 
   &__list {
     margin: 0 0 60px;
+
+    @media (min-width: 768px) {
+      column-count: 2;
+    }
 
     &::before {
       @include instructor_decoration;
@@ -33,10 +52,35 @@
       display: block;
       float: left;
       padding: 0 10px 0 0;
+
+      @media (min-width: 768px) {
+        @include instructor_decoration_desktop;
+      }
     }
   }
 
   &__item {
+    &:not(:last-of-type) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__list-score {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      display: block;
+
+      column-count: 2;
+    }
+  }
+
+  &__item-score {
+    align-items: center;
+    display: flex;
+
     &:not(:last-of-type) {
       margin: 0 0 20px;
     }
@@ -49,19 +93,5 @@
     color: #ff0000;
     letter-spacing: 5.8px;
     text-transform: uppercase;
-  }
-
-  &__list-score {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__item-score {
-    align-items: center;
-    display: flex;
-
-    &:not(:last-of-type) {
-      margin: 0 0 20px;
-    }
   }
 }
