@@ -1,16 +1,20 @@
 .instructor {
   margin: 0 0 50px;
-  padding: 0 10px;
+
+  background: url(./../images/instructor__title-cover.png) center top no-repeat;
 
   &__title {
-    margin: 0;
-    padding: 330px 0 50px;
+    margin: 0 0 60px;
 
-    background: url(./../images/instructor__title-cover.png) center 320px no-repeat;
+    line-height: 70px;
+  }
+
+  &__photo {
+    margin: 0 0 10px;
   }
 
   &__name {
-    margin: 10px 0 30px;
+    margin: 0 0 30px;
 
     font: 24px "CoreSansE-65Bold";
     color: #ff0000;
@@ -18,18 +22,24 @@
     text-align: center;
   }
 
-  &__list::before {
-    @include instructor_decoration;
+  &__list {
+    margin: 0 0 60px;
 
-    content: "";
+    &::before {
+      @include instructor_decoration;
 
-    display: block;
-    float: left;
-    padding: 0 10px 0 0;
+      content: "";
+
+      display: block;
+      float: left;
+      padding: 0 10px 0 0;
+    }
   }
 
-  &__item:not(:last-of-type) {
-    margin: 0 0 20px 0;
+  &__item {
+    &:not(:last-of-type) {
+      margin: 0 0 20px;
+    }
   }
 
   &__number {
@@ -44,16 +54,14 @@
   &__list-score {
     display: flex;
     flex-direction: column;
-    margin: 60px 0 0;
   }
-}
 
-.score__item {
-  align-items: center;
-  display: flex;
-  margin: 0 0 20px 0;
+  &__item-score {
+    align-items: center;
+    display: flex;
 
-  &:last-of-type {
-    margin: 0;
+    &:not(:last-of-type) {
+      margin: 0 0 20px;
+    }
   }
 }

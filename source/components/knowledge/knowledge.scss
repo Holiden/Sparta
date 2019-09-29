@@ -44,7 +44,9 @@
   }
 
   &__item {
-    margin: 0 0 50px;
+    &:not(:last-of-type) {
+      margin: 0 0 50px;
+    }
 
     @media (min-width: 768px) {
       flex: 0 0 300px;

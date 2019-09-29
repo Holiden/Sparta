@@ -11,6 +11,10 @@
     background: url(./../images/program__title-cover.png) center top 10px no-repeat, url(./../images/program_photo.jpg) left -20px bottom / auto 380px no-repeat, url(./../images/program_bg.jpg) center top 150px / cover no-repeat;
   }
 
+  @media (min-width: 1440px) {
+    background: url(./../images/program__title-cover.png) center top 10px no-repeat, url(./../images/program_photo.jpg) center bottom / auto 380px no-repeat, url(./../images/program_bg.jpg) center top 150px / cover no-repeat;
+  }
+
   @media (min-width: 1920px) {
     min-height: 1400px;
     margin: 0 0 130px;
@@ -57,7 +61,10 @@
   &__item {
     align-items: flex-start;
     display: flex;
-    margin: 0 0 30px;
+
+    &:not(:last-of-type) {
+      margin: 0 0 30px;
+    }
   }
 
   &__number {

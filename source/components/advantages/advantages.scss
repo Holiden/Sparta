@@ -130,7 +130,9 @@
   }
 
   &__item {
-    margin: 0 0 30px;
+    &:not(:last-of-type) {
+      margin: 0 0 30px;
+    }
 
     @media (min-width: 1920px) {
       flex: 0 0 250px;
