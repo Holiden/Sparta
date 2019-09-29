@@ -1,28 +1,29 @@
 .reviews {
-  margin: 0 0 50px;
-  padding: 0 10px;
+  min-height: 970px;
 
   text-align: center;
+
+  background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom -40px / auto 710px no-repeat;
 
   &::after {
     @include reviews__pagination;
 
     content: "";
 
-    display: inline-flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
   }
 
   &__title {
-    padding: 40px 0 20px;
+    margin: 0 0 60px;
 
-    background: url(./../images/reviews__title-cover.png) center 30px no-repeat;
+    line-height: 80px;
   }
 
   &__video {
     position: relative;
 
-    margin: 0 0 60px;
+    margin: 0 0 100px;
 
     text-align: center;
   }
@@ -52,8 +53,34 @@
     background: url(./../images/play_hover.png) center no-repeat;
   }
 
+  &__photo {
+    margin: 0 0 20px;
+  }
+
   &__name {
+    margin: 0 0 20px;
+
     font: 20px "CoreSansE-65Bold";
+  }
+
+  &__text {
+    position: relative;
+
+    overflow: hidden;
+    max-height: 150px;
+    margin: 0 0 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+
+      display: block;
+      height: 50px;
+      width: 320px;
+
+      background-image: linear-gradient(to top, #ffffff 0%, transparent 100%);
+    }
   }
 
   &__button {
@@ -73,26 +100,21 @@
     &::after {
       content: "";
       position: absolute;
-      top: 10px;
-      right: 0;
+      top: 14px;
 
       height: 1px;
       width: 5px;
 
       background-color: #666666;
-
-      transform: rotate(45deg);
     }
 
     &::before {
-      top: 14px;
       right: 9px;
 
       transform: rotate(45deg);
     }
 
     &::after {
-      top: 14px;
       right: 6px;
 
       transform: rotate(-45deg);
