@@ -2,7 +2,11 @@
   min-height: 650px;
   margin: 0 0 50px;
 
-  background: url(./../images/footer_bg.jpg) center top / auto 650px no-repeat;
+  background: url(./../images/footer_bg.jpg) center top -10px/ auto 650px no-repeat;
+
+  @media (min-width: 768px) {
+    background: url(./../images/footer_bg.jpg) center top -10px/ auto 700px no-repeat;
+  }
 
   &__title {
     margin: 0 0 20px;
@@ -13,12 +17,28 @@
     letter-spacing: 2.4px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      margin: 0 0 40px;
+
+      font-size: 65px;
+      letter-spacing: 3.2px;
+    }
   }
 
   &__text {
     margin: 0 0 40px;
 
     color: #ffffff;
+
+    @media (min-width: 768px) {
+      max-width: 360px;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__form {
+    text-align: center;
   }
 
   &__input {
@@ -36,10 +56,28 @@
     &::placeholder {
       color: #ffffff;
     }
+
+    @media (min-width: 768px) {
+      display: block;
+      width: 270px;
+      margin: 0 auto 30px;
+    }
   }
 
   &__button {
     margin: 20px 0 140px;
+
+    @media (min-width: 768px) {
+      margin: 20px 0 160px;
+    }
+  }
+
+  &__wrapper_bottom {
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__phone {
@@ -56,6 +94,11 @@
     &:hover {
       color: #ff3838;
     }
+
+    @media (min-width: 768px) {
+      order: 3;
+      margin: 0;
+    }
   }
 
   &__link {
@@ -70,6 +113,11 @@
     &:hover {
       color: #ff3838;
     }
+
+    @media (min-width: 768px) {
+      order: 2;
+      margin: 0;
+    }
   }
 
   &__logo {
@@ -77,6 +125,11 @@
     display: flex;
     max-width: 150px;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      order: 1;
+      margin: 0;
+    }
   }
 
   &__name {
