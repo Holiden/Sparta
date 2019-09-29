@@ -11,6 +11,12 @@
     background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom / auto 490px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
   }
 
+  @media (min-width: 1920px) {
+    min-height: 1420px;
+
+    background: url(./../images/reviews__title-cover_desktop.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom / auto 590px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
+  }
+
   &::after {
     @include reviews__pagination;
 
@@ -29,6 +35,14 @@
       font-size: 48px;
       letter-spacing: 2.4px;
     }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 70px;
+
+      font-size: 68px;
+      line-height: 120px;
+      letter-spacing: 3.4px;
+    }
   }
 
   &__video-wrapper {
@@ -37,6 +51,10 @@
     margin: 0 0 80px;
 
     text-align: center;
+
+    @media (min-width: 1920px) {
+      margin: 0 0 140px;
+    }
 
     &::before {
       content: "";
@@ -65,15 +83,26 @@
   }
 
   &__video {
+    cursor: pointer;
+
     @media (min-width: 768px) {
       height: 407px;
       width: 723px;
+    }
+
+    @media (min-width: 1920px) {
+      height: 642px;
+      width: 1142px;
     }
   }
 
   &__wrapper_middle {
     @media (min-width: 768px) {
       display: flex;
+    }
+
+    @media (min-width: 1920px) {
+      justify-content: center;
     }
   }
 
@@ -91,6 +120,12 @@
       width: 145px;
       margin: 0 20px 0 0;
     }
+
+    @media (min-width: 1920px) {
+      height: 265px;
+      width: 199px;
+      margin: 0 50px 0 0;
+    }
   }
 
   &__name {
@@ -105,6 +140,10 @@
     overflow: hidden;
     max-height: 150px;
     margin: 0 0 10px;
+
+    @media (min-width: 1920px) {
+      max-width: 700px;
+    }
 
     &::after {
       content: "";
