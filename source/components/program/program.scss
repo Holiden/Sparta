@@ -1,22 +1,52 @@
 .program {
   min-height: 1340px;
-  margin: 0 0 50px 0;
+  margin: 0 0 50px;
 
   background: url(./../images/program__title-cover.png) center top 45px no-repeat, url(./../images/program_photo.jpg) left -20px bottom / auto 320px no-repeat, url(./../images/program_bg.jpg) center / cover no-repeat;
 
+  @media (min-width: 768px) {
+    min-height: 1090px;
+    margin: 0 0 60px;
+
+    text-align: center;
+
+    background: url(./../images/program__title-cover.png) center top 10px no-repeat, url(./../images/program_photo.jpg) left -20px bottom / auto 380px no-repeat, url(./../images/program_bg.jpg) center top 150px / cover no-repeat;
+  }
+
   &__title {
-    margin: 0 0 50px 0;
+    margin: 0 0 50px;
     padding: 40px 0 0;
+
+    @media (min-width: 768px) {
+      margin: 0 0 130px;
+      padding: 0;
+
+      font-size: 48px;
+      line-height: 100px;
+      letter-spacing: 2.5px;
+    }
   }
 
   &__list {
     margin: 0 0 50px;
+
+    @media (min-width: 768px) {
+      max-height: 280px;
+      margin: 0 0 60px;
+
+      column-count: 2;
+      text-align: left;
+    }
   }
 
   &__item {
     align-items: flex-start;
     display: flex;
     margin: 0 0 30px;
+
+    @media (min-width: 768px) {
+      max-width: 356px;
+    }
   }
 
   &__number {
@@ -39,9 +69,18 @@
     letter-spacing: 3.5px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin: 0 55px 0 0;
+    }
   }
 
   &__button {
     margin: 0 0 60px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 70px;
+    }
   }
 }
