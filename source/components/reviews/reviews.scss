@@ -3,18 +3,18 @@
 
   text-align: center;
 
-  background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom -40px / auto 710px no-repeat;
+  background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.png) center bottom -40px / auto 710px no-repeat;
 
   @media (min-width: 768px) {
     min-height: 1020px;
 
-    background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom / auto 490px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
+    background: url(./../images/reviews__title-cover.png) center top no-repeat, url(./../images/reviews_cover.png) center bottom / auto 490px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
   }
 
   @media (min-width: 1920px) {
     min-height: 1420px;
 
-    background: url(./../images/reviews__title-cover_desktop.png) center top no-repeat, url(./../images/reviews_cover.jpg) center bottom / auto 590px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
+    background: url(./../images/reviews__title-cover_desktop.png) center top no-repeat, url(./../images/reviews_cover.png) center bottom / auto 590px no-repeat, url(./../images/reviews_bg.jpg) center top -400px no-repeat;
   }
 
   &::after {
@@ -108,6 +108,8 @@
 
   &__wrapper_bottom {
     @media (min-width: 768px) {
+      max-width: 600px;
+
       text-align: left;
     }
   }

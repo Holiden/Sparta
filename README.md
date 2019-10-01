@@ -18,4 +18,4 @@
 [telegram](https://t.me/holiden)  
 [vk](https://vk.com/holiden)
 
-![Screenshot макета](https://github.com/Holiden/Sparta/blob/master/source/images/screenshot.png)
+![Screenshot макета](https://github.com/Holiden/Sparta/blob/master/source/images/screenshot.jpg)

@@ -30,14 +30,14 @@
 
     font: 38px "CoreSansE-95Black";
     color: #ffffff;
-    letter-spacing: 2.32px;
+    letter-spacing: 2.3px;
 
     @media (min-width: 768px) {
       max-width: 340px;
       margin: 0 auto 30px;
 
       font-size: 40px;
-      letter-spacing: 3.34px;
+      letter-spacing: 3.4px;
     }
 
     @media (min-width: 1920px) {
@@ -45,28 +45,25 @@
       margin: 0 0 40px;
 
       font-size: 68px;
-      letter-spacing: 3.4px;
       text-align: left;
     }
 
     &_big {
-      font: 102px/11.45px Besom;
+      font: 102px/11px Besom;
       color: #ff0000;
       letter-spacing: 5px;
-      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
       @media (min-width: 768px) {
         margin: 0 auto 30px;
 
         font-size: 107px;
-        line-height: 11.97px;
-        letter-spacing: 8.94px;
+        letter-spacing: 9px;
       }
 
       @media (min-width: 1920px) {
         font-size: 180px;
         line-height: 20px;
-        letter-spacing: 9px;
       }
     }
   }
@@ -79,7 +76,7 @@
 
     font: 14px "CoreSansE-95Black";
     color: #1b1916;
-    letter-spacing: 0.9px;
+    letter-spacing: 1px;
 
     @media (min-width: 768px) {
       margin: 0 210px 30px;
@@ -180,7 +177,7 @@
     min-width: 250px;
     margin: 50px 0 20px;
 
-    letter-spacing: 11.2px;
+    letter-spacing: 11px;
     text-transform: lowercase;
 
     background: url(../images/header__blur.png) center 8px no-repeat;

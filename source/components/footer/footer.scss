@@ -135,7 +135,7 @@
   &__logo-wrapper {
     align-items: center;
     display: flex;
-    max-width: 150px;
+    justify-content: center;
     margin: 0 auto;
 
     @media (min-width: 768px) {
@@ -145,6 +145,7 @@
   }
 
   &__name {
+    max-width: 100px;
     padding: 0 0 0 10px;
 
     font-size: 20px;
