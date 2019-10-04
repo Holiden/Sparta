@@ -1,0 +1,66 @@
+.promo {
+  min-height: 510px;
+  margin: 0 0 50px;
+
+  color: #ffffff;
+
+  background: url(./../images/promo_bg.jpg) top center / cover no-repeat;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    min-height: 370px;
+    height: 370px;
+  }
+
+  @media (min-width: 1920px) {
+    flex-wrap: wrap;
+    margin: 0 0 90px;
+  }
+
+  &__wrapper {
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin: 0 0 50px;
+    padding: 150px 0 0;
+
+    font: 27px "CoreSansE-95Black";
+    letter-spacing: 1.6px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      flex: 0 0 320px;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: 1920px) {
+      display: flex;
+
+      font-size: 41px;
+      letter-spacing: 2.4px;
+      text-align: left;
+    }
+
+    &_big {
+      font: 80px Besom;
+      color: #ff0000;
+      letter-spacing: 5px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+      @media (min-width: 1920px) {
+        margin: 0 40px 0 0;
+
+        font-size: 121px;
+        letter-spacing: 7px;
+      }
+    }
+  }
+}

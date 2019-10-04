@@ -1,0 +1,167 @@
+.advantages {
+  min-height: 1450px;
+  margin: 0 0 30px;
+
+  color: #ffffff;
+
+  background: url(./../images/advantages__title_bg.png) center 170px no-repeat, url(./../images/advantages_bg.jpg) center top / cover no-repeat;
+
+  @media (min-width: 768px) {
+    min-height: 930px;
+    margin: 0 0 50px;
+
+    background: url(./../images/advantages__title_bg_tablet.png) center 150px no-repeat, url(./../images/advantages_bg.jpg) center top / cover no-repeat;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 100px;
+
+    background: url(./../images/advantages__title_bg_desktop.png) center 200px no-repeat, url(./../images/advantages_bg.jpg) center top / cover no-repeat;
+  }
+
+  &__wrapper {
+    padding: 240px 0 0;
+
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      margin: 0 0 50px;
+      padding: 150px 0 0;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 0 0 170px;
+      padding: 290px 0 0;
+    }
+  }
+
+  &__body {
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__title {
+    max-width: 230px;
+    margin: 0 auto 85px;
+
+    font: 36px "CoreSansE-95Black";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      flex: 0 0 230px;
+      max-width: initial;
+      margin: 0 0 0 35px;
+    }
+
+    @media (min-width: 1920px) {
+      flex: 0 0 270px;
+      max-width: 270px;
+      margin: 0 50px 0 100px;
+    }
+
+    &_minor {
+      position: relative;
+
+      max-width: 280px;
+      margin: 0 auto 50px;
+
+      @media (min-width: 768px) {
+        flex: 0 0 170px;
+        max-width: initial;
+        margin: 0 80px 0 160px;
+      }
+
+      @media (min-width: 1920px) {
+        margin: 0 0 0 160px;
+      }
+
+      &::after {
+        @include advantages__blot;
+
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+
+        @media (min-width: 768px) {
+          top: -10px;
+          right: 200px;
+        }
+
+        @media (min-width: 1920px) {
+          right: 320px;
+        }
+      }
+    }
+  }
+
+  &__list {
+    margin: 0 0 80px;
+    padding: 0 30px;
+
+    @media (min-width: 768px) {
+      align-items: center;
+      margin: 0;
+      padding: 25px 60px 0;
+    }
+
+    @media (min-width: 1920px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 80px 0;
+    }
+
+    &_minor {
+      margin: 0;
+      padding: 0;
+
+      @media (min-width: 768px) {
+        flex: 0 0 290px;
+        padding: 0;
+      }
+
+      @media (min-width: 1920px) {
+        flex: initial;
+      }
+    }
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin: 0 0 30px;
+    }
+
+    @media (min-width: 1920px) {
+      flex: 0 0 250px;
+      margin: 0;
+
+      &:not(:last-of-type) {
+        margin: 0 70px 30px 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 20px;
+
+    font: 20px "CoreSansE-65Bold";
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__number {
+    padding: 0 15px 0 0;
+
+    font: 46px/40px Besom;
+    color: rgba(#ffffff, 0.15);
+  }
+}

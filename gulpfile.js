@@ -31,7 +31,8 @@ var fileInclude = require('gulp-file-include');
 var svgSprite = require('gulp-svg-sprite');
 var spriteSmith = require('gulp.spritesmith');
 var merge = require('merge-stream');
-var buffer = require('vinyl-buffer')
+var buffer = require('vinyl-buffer');
+var critical = require('critical').stream;
 
 var paths = {
   views: {
@@ -60,7 +61,8 @@ var paths = {
   },
   images: {
     source: [
-      './source/images/**/*.{gif,jpg,jpeg,png,svg}',
+      './source/images/content/*.{gif,jpg,jpeg,png,svg}',
+      './source/images/background/*.{gif,jpg,jpeg,png,svg}',
       '!./source/images/favicons/*.{gif,jpg,jpeg,png}',
       '!./source/images/png/*.png',
       '!./source/images/svg/stack/*.svg',
@@ -68,7 +70,8 @@ var paths = {
     ],
     build: './build/images/',
     watch: [
-      './source/images/**/*.{gif,jpg,jpeg,png,svg}',
+      './source/images/content/*.{gif,jpg,jpeg,png,svg}',
+      './source/images/background/*.{gif,jpg,jpeg,png,svg}',
       '!./source/images/favicons/*.{gif,jpg,jpeg,png}',
       '!./source/images/png/*.png',
       '!./source/images/svg/stack/*.svg',
@@ -76,17 +79,9 @@ var paths = {
     ]
   },
   imagesWebp: {
-    source: [
-      './source/images/**/*.{gif,jpg,jpeg,png}',
-      '!./source/images/favicons/*.{gif,jpg,jpeg,png}',
-      '!./source/images/png/*.png'
-    ],
+    source: './source/images/content/*.{gif,jpg,jpeg,png}',
     build: './build/images/',
-    watch: [
-      './source/images/**/*.{gif,jpg,jpeg,png}',
-      '!./source/images/favicons/*.{gif,jpg,jpeg,png}',
-      '!./source/images/png/*.png'
-    ]
+    watch: './source/images/content/*.{gif,jpg,jpeg,png}'
   },
   favicons: {
     source: './source/images/favicons/*.{gif,jpg,jpeg,png}',
@@ -136,11 +131,32 @@ function views() {
       minifyJS: true,
       removeComments: true
     })))
+    .pipe(gulpIf(argv.build, critical({
+      inline: true,
+      base: 'paths.views.build',
+      css: [
+        './build/styles/main.min.css'
+      ],
+      dimensions: [{
+        width: 320,
+        height: 568
+        },
+        {
+        width: 768,
+        height: 1024
+        },
+        {
+        width: 1920,
+        height: 1280
+        }
+      ],
+      minify: true
+    })))
     .pipe(debug({
       title: 'HTML:'
     }))
     .pipe(gulp.dest(paths.views.build))
-    .on('end', browserSync.reload);
+    .on('end', browserSync.reload)
 }
 
 function styles() {
@@ -159,7 +175,7 @@ function styles() {
     .pipe(gcmq())
     .pipe(purgeCSS({
       content: [
-        './build/**.html'
+        './source/**/*.html'
       ],
       keyframes: true,
       whitelistPatterns: [/js/]
@@ -187,7 +203,7 @@ function styles() {
       title: 'CSS:'
     }))
     .pipe(gulp.dest(paths.styles.build))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
 }
 
 function scripts() {
@@ -216,7 +232,7 @@ function scripts() {
       title: 'Scripts:'
     }))
     .pipe(gulp.dest(paths.scripts.build))
-    .on('end', browserSync.reload);
+    .on('end', browserSync.reload)
 }
 
 function images() {
@@ -235,10 +251,6 @@ function images() {
         plugins: [
           {cleanupAttrs: true},
           {cleanupListOfValues: true},
-          {cleanupNumericValues: {
-            floatPrecision: 0
-            }
-          },
           {collapseGroups: true},
           {convertColors: true},
           {convertEllipseToCircle: true},
@@ -261,7 +273,6 @@ function images() {
           {removeNonInheritableGroupAttrs: true},
           {removeOffCanvasPaths: true},
           {removeScriptElement: true},
-          {removeStyleElement: true},
           {removeTitle: true},
           {removeUnknownsAndDefaults: true},
           {removeUnusedNS: true},
@@ -509,17 +520,17 @@ function watch() {
       tunnel: 'development-site',
       ui: false
     })
-  };
-  gulp.watch(paths.views.watch, views);
-  gulp.watch(paths.styles.watch, styles);
-  gulp.watch(paths.scripts.watch, scripts);
-  gulp.watch(paths.images.watch, images);
-  gulp.watch(paths.imagesWebp.watch, imagesWebp);
-  gulp.watch(paths.favicons.watch, favicons);
-  gulp.watch(paths.pngSprite.watch, pngSprite);
-  gulp.watch(paths.svgSpriteStack.watch, svgSpriteStack);
-  gulp.watch(paths.svgSpriteSymbol.watch, svgSpriteSymbol);
-  gulp.watch(paths.fonts.watch, fonts);
+  }
+  gulp.watch(paths.views.watch, views)
+  gulp.watch(paths.styles.watch, styles)
+  gulp.watch(paths.scripts.watch, scripts)
+  gulp.watch(paths.images.watch, images)
+  gulp.watch(paths.imagesWebp.watch, imagesWebp)
+  gulp.watch(paths.favicons.watch, favicons)
+  gulp.watch(paths.pngSprite.watch, pngSprite)
+  gulp.watch(paths.svgSpriteStack.watch, svgSpriteStack)
+  gulp.watch(paths.svgSpriteSymbol.watch, svgSpriteSymbol)
+  gulp.watch(paths.fonts.watch, fonts)
 }
 
-gulp.task('default', gulp.series(clean, pngSprite, svgSpriteStack, svgSpriteSymbol, views, styles, scripts, images, imagesWebp, favicons, fonts, watch));
+gulp.task('default', gulp.series(clean, pngSprite, svgSpriteStack, svgSpriteSymbol, styles, views,scripts, images, imagesWebp, favicons, fonts, watch))
